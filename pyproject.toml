@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "employee-sick"
+version = "0.1.0"
+description = ""
+authors = ["Shannonlee Gafeny <shannongafney@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+strawberry-graphql = "^0.229.0"
+Quart = "^0.19.5"
+daemon = "^1.2"
+logging = "^0.4.9.6"
+hypercorn = "^0.16.0"
+asyncio = "^3.4.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "src.cli:cli"
